@@ -16,34 +16,37 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <link rel="stylesheet" href="style.css" />
-            <script type="text/javascript" src="script.js"></script>
             <title>Document</title>
         </head>
         <body>
           
             <div class="calculator__container">
-               <div class="screen">
-                   <div class="screen__numbers" id="result" ></div>
-               </div> 
-               <button type="button" value="+" id="button+" onclick="btnPlus()">+</button>
-               <button type="button" value="-" id="button-" onclick="btnLess()">-</button>
-               <button type="button" value="*" id="button*" onclick="btnMulti()">*</button>
-               <button type="button" value="/" id="button/" onclick="btnDiv()">/</button>
-               <button type="button" value="7" id="button-7" onclick="btn(7)">7</button>
-               <button type="button" value="8" id="button-8" onclick="btn(8)">8</button>
-               <button type="button" value="9" id="button-9" onclick="btn(9)">9</button>
-               <button type="button" value="4" id="button-4" onclick="btn(4)">4</button>
-               <button type="button" value="5" id="button-5" onclick="btn(5)">5</button>
-               <button type="button" value="6" id="button-6" onclick="btn(6)">6</button>
-               <button type="button" value="1" id="button-1" onclick="btn(1)">1</button>
-               <button type="button" value="2" id="button-2" onclick="btn(2)">2</button>
-               <button type="button" value="3" id="button-3" onclick="btn(3)">3</button>
-               <button type="button" value="0" id="button-0" onclick="btn(0)">0</button>
-               <button type="button" value="." id="button-." onclick="btn()">.</button>
-               <button type="button" value="clear" id="button-clean" onclick="btnClear()">AC</button>
-               <button class="equal" value="clear" id="button-clean" onclick="btnEqual()">=</button>
+
+                   <input class="screen"></input>
+
+               <button type="button" class="btn" data="+">+</button>
+               <button type="button" class="btn" data="-">-</button>
+               <button type="button" class="btn" data="*">*</button>
+               <button type="button" class="btn" data="/">/</button>
+
+               <button type="button" class="btn" data="7">7</button>
+               <button type="button" class="btn" data="8">8</button>
+               <button type="button" class="btn" data="9">9</button>
+               <button type="button" class="btn" data="4">4</button>
+               <button type="button" class="btn" data="5">5</button>
+               <button type="button" class="btn" data="6">6</button>
+               <button type="button" class="btn" data="1">1</button>
+               <button type="button" class="btn" data="2">2</button>
+               <button type="button" class="btn" data="3">3</button>
+               <button type="button" class="btn" data="0">0</button>
+               <button type="button" class="btn" data=".">.</button>
+               
+               <button type="button" class="btn--c">C</button>
+               <button type="button" class="btn--ac allclear">AC</button>
+               <button type="button" class="btn--equal equal">=</button>
               
         
-            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
